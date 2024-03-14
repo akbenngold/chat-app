@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./Login.scss";
 
@@ -14,7 +15,7 @@ function Login() {
         <button>Sign in</button>
 
         <p className="form-register-link">
-          You don't have account? <a href="">Register</a>
+          You don't have account? <Link to="/signup">Register</Link>
         </p>
       </form>
     </div>
