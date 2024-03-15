@@ -18,9 +18,9 @@
   &-card {
     display: flex;
     background-color: #ddddf7;
-    width: 70%;
-    height: 70%;
+
     border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px #d8b4fe;
     overflow: hidden;
 
     .home-sidebar {
