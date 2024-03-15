@@ -38,29 +38,63 @@
   //   chat body
   &-body {
     padding: 1.25rem;
+    height: 100%;
+    overflow: scroll;
+
     .message {
       display: flex;
       gap: 1rem;
-      align-items: center;
-      img {
-        height: 1.25rem;
-        width: 1.25rem;
+      align-items: end;
+      position: relative;
+      margin-bottom: 1.5rem;
+
+      .message__img {
+        height: 1.5rem;
+        width: 1.5rem;
         border-radius: 50%;
+        object-fit: cover;
       }
 
       .message__content {
         display: flex;
         flex-direction: column;
         max-width: 70%;
+
+        img {
+          height: 9rem;
+          width: 9rem;
+          object-fit: cover;
+          border-radius: 0;
+          margin: 0.5rem;
+        }
       }
 
       .message__body {
         background-color: white;
         padding: 0.4rem;
         border-radius: 0.6rem 0.6rem 0.6rem 0;
+        width: fit-content;
       }
       .timestamp {
         font-size: 0.75rem;
+        position: absolute;
+
+        bottom: -1rem;
+        color: grey;
+      }
+
+      &.owner {
+        flex-direction: row-reverse;
+
+        .message__content {
+          align-items: end;
+
+          .message__body {
+            background-color: aquamarine;
+
+            border-radius: 0.6rem 0.6rem 0 0.6rem;
+          }
+        }
       }
     }
   }
