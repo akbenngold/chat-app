@@ -4,7 +4,7 @@ function Message() {
   return (
     <div>
       <div className="message">
-        <img src="src/assets/avatar.jpeg" alt="" />
+        <img src="../assets/avatar.jpeg" alt="" />
 
         <div className="message__content">
           <div className="message__body">hello</div>
