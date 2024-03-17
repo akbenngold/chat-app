@@ -6,7 +6,7 @@ function Navbar() {
       <span>WaveLink Chat</span>
       <div className="navbar__right">
         <div className="username">
-          <img src="src/assets/avatar.jpeg" alt="" />
+          <img src="https://unsplash.com/photos/shallow-focus-photography-of-woman-outdoor-during-day-rDEOVtE7vOs" alt="" />
           <span>John Doe</span>
         </div>
         <button>logout</button>
